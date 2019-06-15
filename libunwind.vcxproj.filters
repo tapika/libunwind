@@ -136,11 +136,14 @@
     <ClCompile Include="src\elf64.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\elfxx.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\x86_64\is_fpreg.c">
       <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\setcontext.S">
+      <Filter>src\x86_64_asm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\getcontext.S">
+      <Filter>src\x86_64_asm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -209,13 +212,6 @@
     <ClInclude Include="src\elfxx.h">
       <Filter>src</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\x86_64\getcontext.S">
-      <Filter>src\x86_64_asm</Filter>
-    </None>
-    <None Include="src\x86_64\setcontext.S">
-      <Filter>src\x86_64_asm</Filter>
-    </None>
+    <ClInclude Include="src\elfxx.c" />
   </ItemGroup>
 </Project>
