@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0b79bd4b-94a4-461a-89a7-a71dd19100a1}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>libunwind</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>`wslpath '$(ProjectDir)'`</RemoteRootDir>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>`wslpath '$(ProjectDir)'`</RemoteRootDir>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemoteProjectDir>$(RemoteRootDir)</RemoteProjectDir>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+    <IncludePath>include;src;include/tdep-x86_64</IncludePath>
+    <LocalRemoteCopySources>true</LocalRemoteCopySources>
+    <SourcesToCopyRemotelyOverride />
+    <RemoteCppCompileToolExe>echo g++</RemoteCppCompileToolExe>
+    <OutDir>$(ProjectDir)\bin\$(Keyword)_$(Configuration)_$(PlatformArchitecture)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(ProjectName)_$(PlatformTriplet)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RemoteProjectDir>$(RemoteRootDir)</RemoteProjectDir>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+    <IncludePath>include;src;include/tdep-x86_64</IncludePath>
+    <LocalRemoteCopySources>true</LocalRemoteCopySources>
+    <SourcesToCopyRemotelyOverride />
+    <RemoteCppCompileToolExe>echo g++</RemoteCppCompileToolExe>
+    <OutDir>$(ProjectDir)\bin\$(Keyword)_$(Configuration)_$(PlatformArchitecture)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(ProjectName)_$(PlatformTriplet)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dwarf\global.c" />
+    <ClCompile Include="src\dwarf\Lexpr.c" />
+    <ClCompile Include="src\dwarf\Lfde.c" />
+    <ClCompile Include="src\dwarf\Lfind_proc_info-lsb.c" />
+    <ClCompile Include="src\dwarf\Lfind_unwind_table.c" />
+    <ClCompile Include="src\dwarf\Lparser.c" />
+    <ClCompile Include="src\dwarf\Lpe.c" />
+    <ClCompile Include="src\elf64.c" />
+    <ClInclude Include="src\elfxx.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="src\mi\backtrace.c" />
+    <ClCompile Include="src\mi\dyn-cancel.c" />
+    <ClCompile Include="src\mi\dyn-info-list.c" />
+    <ClCompile Include="src\mi\dyn-register.c" />
+    <ClCompile Include="src\mi\flush_cache.c" />
+    <ClCompile Include="src\mi\init.c" />
+    <ClCompile Include="src\mi\Ldestroy_addr_space.c" />
+    <ClCompile Include="src\mi\Ldyn-extract.c" />
+    <ClCompile Include="src\mi\Lfind_dynamic_proc_info.c" />
+    <ClCompile Include="src\mi\Lget_accessors.c" />
+    <ClCompile Include="src\mi\Lget_fpreg.c" />
+    <ClCompile Include="src\mi\Lget_proc_info_by_ip.c" />
+    <ClCompile Include="src\mi\Lget_proc_name.c" />
+    <ClCompile Include="src\mi\Lget_reg.c" />
+    <ClCompile Include="src\mi\Lput_dynamic_unwind_info.c" />
+    <ClCompile Include="src\mi\Lset_cache_size.c" />
+    <ClCompile Include="src\mi\Lset_caching_policy.c" />
+    <ClCompile Include="src\mi\Lset_fpreg.c" />
+    <ClCompile Include="src\mi\Lset_reg.c" />
+    <ClCompile Include="src\mi\mempool.c" />
+    <ClCompile Include="src\mi\strerror.c" />
+    <ClCompile Include="src\os-linux.c" />
+    <ClCompile Include="src\x86_64\is_fpreg.c" />
+    <ClCompile Include="src\x86_64\Lapply_reg_state.c" />
+    <ClCompile Include="src\x86_64\Lcreate_addr_space.c" />
+    <ClCompile Include="src\x86_64\Lget_proc_info.c" />
+    <ClCompile Include="src\x86_64\Lget_save_loc.c" />
+    <ClCompile Include="src\x86_64\Lglobal.c" />
+    <ClCompile Include="src\x86_64\Linit.c" />
+    <ClCompile Include="src\x86_64\Linit_local.c" />
+    <ClCompile Include="src\x86_64\Linit_remote.c" />
+    <ClCompile Include="src\x86_64\Los-linux.c" />
+    <ClCompile Include="src\x86_64\Lregs.c" />
+    <ClCompile Include="src\x86_64\Lreg_states_iterate.c" />
+    <ClCompile Include="src\x86_64\Lresume.c" />
+    <ClCompile Include="src\x86_64\Lstash_frame.c" />
+    <ClCompile Include="src\x86_64\Lstep.c" />
+    <ClCompile Include="src\x86_64\Ltrace.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\compiler.h" />
+    <ClInclude Include="include\dwarf-eh.h" />
+    <ClInclude Include="include\dwarf.h" />
+    <ClInclude Include="include\dwarf_i.h" />
+    <ClInclude Include="include\libunwind-common.h" />
+    <ClInclude Include="include\libunwind-coredump.h" />
+    <ClInclude Include="include\libunwind-dynamic.h" />
+    <ClInclude Include="include\libunwind-x86_64.h" />
+    <ClInclude Include="include\libunwind.h" />
+    <ClInclude Include="include\mempool.h" />
+    <ClInclude Include="include\remote.h" />
+    <ClInclude Include="include\unwind.h" />
+    <ClInclude Include="src\elf64.h" />
+    <ClInclude Include="src\elfxx.h" />
+    <ClInclude Include="src\os-linux.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\x86_64\getcontext.S">
+      <FileType>Document</FileType>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCpp</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCpp</CompileAs>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">| sed "s/-x c++//" | sh %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">| sed "s/-x c++//" | sh %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\setcontext.S">
+      <FileType>Document</FileType>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCpp</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCpp</CompileAs>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">| sed "s/-x c++//" | sh %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">| sed "s/-x c++//" | sh %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile />
+    <ClCompile>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;_GNU_SOURCE;</PreprocessorDefinitions>
+      <CAdditionalWarning>switch;no-deprecated-declarations;empty-body;no-conversion;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable</CAdditionalWarning>
+      <CLanguageStandard>gnu99</CLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile />
+    <ClCompile>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;_GNU_SOURCE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CAdditionalWarning>switch;no-deprecated-declarations;empty-body;no-conversion;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable</CAdditionalWarning>
+      <CLanguageStandard>gnu99</CLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

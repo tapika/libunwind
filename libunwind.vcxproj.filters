@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\mi\Lget_fpreg.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lset_cache_size.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lset_caching_policy.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dwarf\Lfind_proc_info-lsb.c">
+      <Filter>src\dwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dwarf\Lfind_unwind_table.c">
+      <Filter>src\dwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\flush_cache.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\init.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\mempool.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\strerror.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Los-linux.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lapply_reg_state.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lcreate_addr_space.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lget_proc_info.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lget_save_loc.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lglobal.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Linit.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Linit_local.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Linit_remote.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lreg_states_iterate.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lregs.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lresume.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lstash_frame.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Lstep.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\Ltrace.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dwarf\Lexpr.c">
+      <Filter>src\dwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dwarf\Lfde.c">
+      <Filter>src\dwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dwarf\Lparser.c">
+      <Filter>src\dwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dwarf\Lpe.c">
+      <Filter>src\dwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\backtrace.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\dyn-cancel.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\dyn-info-list.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\dyn-register.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Ldestroy_addr_space.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Ldyn-extract.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lfind_dynamic_proc_info.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lget_accessors.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lget_proc_info_by_ip.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lget_proc_name.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lget_reg.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lput_dynamic_unwind_info.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lset_fpreg.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mi\Lset_reg.c">
+      <Filter>src\mi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dwarf\global.c">
+      <Filter>src\dwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os-linux.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\elf64.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\elfxx.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\x86_64\is_fpreg.c">
+      <Filter>src\x86_64</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{41db37b9-5765-4d88-bc76-9d33314ec6a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{5fdf572c-18c6-496f-bc7d-432ad72f0420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mi">
+      <UniqueIdentifier>{870155e5-186a-42ad-b52f-12c23e886de8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dwarf">
+      <UniqueIdentifier>{b3e541d1-2a90-433d-a6c9-95a7b0b8e483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\x86_64">
+      <UniqueIdentifier>{42bb1893-52e5-4053-a67a-ca8e7e3b80b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\x86_64_asm">
+      <UniqueIdentifier>{6ccd2782-b503-42a1-92b7-e53b547c06f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\compiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dwarf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dwarf_i.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dwarf-eh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libunwind.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libunwind-x86_64.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mempool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\remote.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\unwind.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libunwind-coredump.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libunwind-dynamic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libunwind-common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os-linux.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\elf64.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\elfxx.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\x86_64\getcontext.S">
+      <Filter>src\x86_64_asm</Filter>
+    </None>
+    <None Include="src\x86_64\setcontext.S">
+      <Filter>src\x86_64_asm</Filter>
+    </None>
+  </ItemGroup>
+</Project>
