@@ -212,6 +212,8 @@
     <ClInclude Include="src\elfxx.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\elfxx.c" />
+    <ClInclude Include="src\elfxx.c">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
