@@ -93,6 +93,45 @@
     <ClCompile Include="src\mi\dyn-info-list.c" />
     <ClCompile Include="src\mi\dyn-register.c" />
     <ClCompile Include="src\mi\flush_cache.c" />
+    <ClInclude Include="src\mi\Gdestroy_addr_space.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gdyn-extract.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gfind_dynamic_proc_info.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_accessors.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_fpreg.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_proc_info_by_ip.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_proc_name.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_reg.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gput_dynamic_unwind_info.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gset_cache_size.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gset_caching_policy.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gset_fpreg.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gset_reg.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
     <ClCompile Include="src\mi\init.c" />
     <ClCompile Include="src\mi\Ldestroy_addr_space.c" />
     <ClCompile Include="src\mi\Ldyn-extract.c" />

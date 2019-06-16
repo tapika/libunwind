@@ -278,5 +278,44 @@
     <ClInclude Include="src\x86_64\Gtrace.c">
       <Filter>src\x86_64</Filter>
     </ClInclude>
+    <ClInclude Include="src\mi\Gdestroy_addr_space.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gdyn-extract.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gfind_dynamic_proc_info.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_accessors.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_fpreg.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_proc_info_by_ip.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_proc_name.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gget_reg.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gput_dynamic_unwind_info.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gset_cache_size.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gset_caching_policy.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gset_fpreg.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mi\Gset_reg.c">
+      <Filter>src\mi</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
