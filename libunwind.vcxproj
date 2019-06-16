@@ -59,7 +59,25 @@
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemGroup>
+    <ClInclude Include="src\dwarf\Gexpr.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gfde.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gfind_proc_info-lsb.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gfind_unwind_table.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
     <ClCompile Include="src\dwarf\global.c" />
+    <ClInclude Include="src\dwarf\Gparser.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gpe.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
     <ClCompile Include="src\dwarf\Lexpr.c" />
     <ClCompile Include="src\dwarf\Lfde.c" />
     <ClCompile Include="src\dwarf\Lfind_proc_info-lsb.c" />

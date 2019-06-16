@@ -215,5 +215,23 @@
     <ClInclude Include="src\elfxx.c">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\dwarf\Gexpr.c">
+      <Filter>src\dwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gfde.c">
+      <Filter>src\dwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gfind_proc_info-lsb.c">
+      <Filter>src\dwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gfind_unwind_table.c">
+      <Filter>src\dwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gparser.c">
+      <Filter>src\dwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dwarf\Gpe.c">
+      <Filter>src\dwarf</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
