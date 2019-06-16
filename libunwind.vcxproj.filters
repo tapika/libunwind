@@ -233,5 +233,50 @@
     <ClInclude Include="src\dwarf\Gpe.c">
       <Filter>src\dwarf</Filter>
     </ClInclude>
+    <ClInclude Include="src\x86_64\Gget_proc_info.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Ginit.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gstash_frame.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gapply_reg_state.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gcreate_addr_space.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gget_save_loc.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gglobal.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Ginit_local.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Ginit_remote.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gos-linux.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Greg_states_iterate.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gregs.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gresume.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gstep.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gtrace.c">
+      <Filter>src\x86_64</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

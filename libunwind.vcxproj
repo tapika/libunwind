@@ -110,6 +110,51 @@
     <ClCompile Include="src\mi\mempool.c" />
     <ClCompile Include="src\mi\strerror.c" />
     <ClCompile Include="src\os-linux.c" />
+    <ClInclude Include="src\x86_64\Gapply_reg_state.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gcreate_addr_space.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gget_proc_info.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gget_save_loc.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gglobal.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Ginit.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Ginit_local.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Ginit_remote.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gos-linux.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gregs.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Greg_states_iterate.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gresume.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gstash_frame.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gstep.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\x86_64\Gtrace.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
     <ClCompile Include="src\x86_64\is_fpreg.c" />
     <ClCompile Include="src\x86_64\Lapply_reg_state.c" />
     <ClCompile Include="src\x86_64\Lcreate_addr_space.c" />
