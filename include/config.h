@@ -123,6 +123,9 @@
 /* Define to 1 if you have the `mincore' function. */
 #define HAVE_MINCORE 1
 
+/* Define to 1 if you have the `pipe2' function. */
+#define HAVE_PIPE2 1
+
 /* Define to 1 if you have the <signal.h> header file. */
 #define HAVE_SIGNAL_H 1
 
